@@ -8,7 +8,7 @@ var webserver = require('gulp-webserver');
 gulp.task('script', function(){
 	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'assets/js/*.js'])
 	.pipe(concat('script.js'))
-	.pipe(gulp.dest('/js/'));
+	.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('style', function(){
@@ -16,9 +16,9 @@ gulp.task('style', function(){
 	.pipe(sass().on('error', sass.logError))
 	.pipe(minifyCSS())
 	.pipe(concat('style.min.css'))
-	.pipe(gulp.dest('/css/'));
+	.pipe(gulp.dest('dist/css/'));
 });
-
+/*
 gulp.task("webserver", function(){
 	gulp.src("../app-sodimac/")
 	.pipe(webserver({
@@ -28,9 +28,9 @@ gulp.task("webserver", function(){
 		open: true
 	}));
 });
-
+*/
 gulp.task('watch', function() {
     gulp.watch('assets/sass/*.scss', ['style']);
 });
 
-gulp.task('default', ['script', 'style', 'webserver', 'watch']);
+gulp.task('default', ['script', 'style', 'watch']);
