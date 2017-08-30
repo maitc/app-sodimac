@@ -18,17 +18,17 @@ gulp.task('style', function(){
 	.pipe(concat('style.min.css'))
 	.pipe(gulp.dest('dist/css/'));
 });
-/*
-gulp.task("webserver", function(){
-	gulp.src("../app-sodimac/dist/")
+
+/*gulp.task("webserver", function(){
+	gulp.src("../app-sodimac/")
 	.pipe(webserver({
 		fallback: "index.html", 
 		livereload: true,
 		directoryListing: false,
 		open: true
 	}));
-});
-*/
+});*/
+
 gulp.task('watch', function() {
     gulp.watch('assets/sass/*.scss', ['style']);
 });
