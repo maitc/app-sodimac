@@ -1,3 +1,113 @@
-body{
-	background-color: red;
+nav{
+		.navbar-brand>img {
+	    display: block;
+	    width: 35px;
+	    margin-left: 63px;
+		}
+
+		.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		    border-color: #e7e7e7;
+		    width: 50%;
+		    height: 100%;
+		}
+
+		.navbar-toggle {
+			float: left !important;
+			margin-left: 10px;
+		}
+
+		.navbar-collapse.in {
+		    overflow-x: auto;
+		}
+	}
+/*SECTION COMPARADOR*/
+.comparador-section{
+	div{
+		div{
+			div{
+				img{
+					width: 103%;
+					margin: 5px 0 0 0;
+					max-height: 120px;
+				}
+			}
+		}
+	}
+}
+.comparador-section{
+	#down{
+		margin-bottom: 2%;
+	}
+	#colOne{
+		border-right: 1px solid gray;
+	
+	}p#rigth{
+		display: inline-flex;
+		padding-left: 2%;
+		font-size: 90%;
+	}
+	h5{
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		padding: 2% 0%;
+		font-weight: 200;
+		color: gray;
+	}h4{
+		font-size: 110%;
+	}button{
+		background-color: #dd0021;
+		color: white;
+	}#margendonw{
+		margin-bottom: 16%;
+		border-bottom: 1px solid gray;
+	}
+}
+footer img{
+	width: 35% !important;
+	height: auto;
+}
+.pie-fijo{
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.pie-fijo{
+-webkit-box-shadow: 0px -4px 28px 0px rgba(184,184,184,1);
+-moz-box-shadow: 0px -4px 28px 0px rgba(184,184,184,1);
+box-shadow: 0px -4px 28px 0px rgba(184,184,184,1);
+}
+#ap{
+	margin-bottom: 3%;
+}
+
+
+
+footer{
+	background-color: white;
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    a.btn.btn-secondary{
+   	padding: 0% -5% 0% 0%;
+   	margin: 0% 0% 0% 0%;
+    }#sofa{
+    color: #337ab7;
+    }
+    img{
+    width: 10%;
+    height: auto;
+    }
+    .fb{
+    	color: #9a9a9a;
+    }#fbp{
+    	border-bottom: 3px solid #337ab7;
+    }
+
+.fa-living {
+    background-image: url('../img/fa-living.svg');
+    background-size: cover;
+    padding: 0;
+
+}
 }
