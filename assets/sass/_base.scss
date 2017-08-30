@@ -1,7 +1,8 @@
 /*MACA*/
 body{
 	background-color: #F5F5F5;
-	nav{
+}
+nav{
 		.navbar-brand>img {
 	    width: 35px;
 	    margin: -2px 0 0 22%;
@@ -71,11 +72,26 @@ body{
 				div{
 					text-align: center;
 					font-size: 13px;
+			}
+		}
+	}
+}
+/*SECTION COMPARADOR*/
+.comparador-section{
+	div{
+		div{
+			div{
+				img{
+					width: 100%;
+					margin: 5px 0 0 0;
+					max-height: 180px !important;
+					margin-bottom:13px;
 				}
 			}
 		}
 	}
 }
+
 .frase-modal{
 	margin-top: 20px 0;
 	color: black;
@@ -211,3 +227,77 @@ input[type=checkbox], input[type=radio]{
 }
 
 /*maca fin*/
+.compara-caja{
+	background-color:#fff;
+	width: 46% !important;
+	margin: 2%;
+	
+}
+.comparador-img{
+	padding: 15px 7px;
+	background-color: #fff;
+}
+.compaCaja{
+		margin: 10px 2px 0 0;
+		//background-color: white;
+		//border-right: 1px solid gray;
+		h5{
+			margin: 0px;
+			color: black;
+			
+		}
+	}
+h5{
+	font-weight: bold !important;	
+}
+
+.agregarC{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.linea-titulo{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom: 1px solid #ADADAD;
+}	
+.comparador-section{
+	
+	#down{
+		margin-bottom: 2%;
+	}
+		
+	p#rigth{
+		display: inline-flex;
+		padding-left: 2%;
+		font-size: 90%;
+	}
+	button {
+	    background-color: #dd0021;
+	    color: #fff;
+	    width: 100% !important;
+	    height: 44px !important;
+	    border: none;
+	}
+
+	#margendonw{
+		margin-bottom: 16%;
+		border-bottom: 1px solid gray;
+	}
+}
+footer img{
+	width: 35% !important;
+	height: auto;
+}
+#ap{
+	margin-bottom: 3%;
+}
+.price-color{
+	color:#0072CE;
+}
+.buscador-producto{
+	a{
+		color: #ADADAD;
+		text-decoration: none;
+	}
+}
