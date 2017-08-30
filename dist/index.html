@@ -81,11 +81,11 @@
   </div>
   <!-- Fin Modal -->
   <!-- CheckList API -->
-  <div class="container seleccionTop">
+  <div class="container seleccionTop world">
     <div class="row">
         <div class="col-xs-6 checkbox">
             <label>
-              <input type="checkbox">
+              <input id="accepted1" type="checkbox">
             </label>
           <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
           <img src="img/07.jpg">
@@ -95,16 +95,18 @@
         </div>
         <div class="col-xs-6 checkbox">
             <label>
-              <input type="checkbox">
-            </label>
+              <input id="accepted2" type="checkbox">
+              </label>
           <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
           <img src="img/07.jpg">
           <h6>Marca</h6>
           <h4>Titulo Producto</h4>
           <h6>$22.000</h6>
         </div>
+        <button class="btn btn-primary" type="submit" id="id_complete" name="save" disabled="disabled">Complete Order</button>
     </div>
   </div>
+  <div class="btn-comparar"></div>
   <!-- Fin CheckList API -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
