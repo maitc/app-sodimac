@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<!--  MSCA -->
   <!-- Menu -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -19,94 +20,64 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="img/marcaPequeña.png"></a>
+        <a class="navbar-brand" href="#">
+          <img src="img/marcaPequeña.png">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="http://www.sodimac.cl/sodimac-cl/">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Comparar</a></li>
-          <li><a href="#">Mi Tienda</a></li>
+          <li><a href="http://www.sodimac.cl/sodimac-cl/content/a70006/Tiendas">Mi Tienda</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 	<!-- Fin Menu -->
-  <!-- Checklist -->
-  <div class="container-fluid containerSelectSeccion">
-    <div class="row">
-      <div class="col-xs-6 col-ms-6">
-        <select name="control-month" class="form-control" aria-describedby="month-addon">
-          <option selected="selected">Filtrar <i class="fa fa-angle-down" aria-hidden="true"></i></option>
-          <option>2</option>                            
-          <option>3</option>
-          <option>4</option>
-        </select>
-      </div>
-      <div class="col-xs-6 col-ms-6">
-        <select name="control-month" class="form-control" aria-describedby="month-addon">
-          <option selected="selected">Ordenar <i class="fa fa-angle-down" aria-hidden="true"></i></option>
-          <option>1</option>                            
-          <option>2</option>                            
-          <option>3</option>
-          <option>4</option>
-        </select>
-      </div>
-    </div>
-  </div>
-  <!-- Fin Select -->
   <!-- Inicio Modal -->
   <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title" id="lineModalLabel">Comparar Productos</h3>
-        </div>
         <div class="modal-body"> 
+          <img src="img/marcaPequeña.png" alt="casa-homecenter">
           <form>
             <div class="form-group">
-              <h4>Recuerda!! Para comparar, debes seleccionar 2 elementos.</h4>
+              <h4 class="frase-modal">¡Ahora puedes comparar los productos que quieras!</h4>
             </div>
-            <div class="checkbox">
+            <div class="check-modal">
               <label>
-                <input type="checkbox">No volver a mostrar esto
+                <input type="checkbox" class="check-close-modal" data-dismiss="modal"> No volver a mostrar esto
               </label>
             </div>
-            <button type="submit" class="btn btn-default">Comparar</button>
           </form>
         </div>
       </div>
     </div>
   </div>
   <!-- Fin Modal -->
-  <!-- CheckList API -->
-  <div class="container seleccionTop world">
+  <div class="container anuncio-comparacion">
     <div class="row">
-        <div class="col-xs-6 checkbox">
-            <label>
-              <input id="accepted1" type="checkbox">
-            </label>
-          <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-          <img src="img/07.jpg">
-          <h6>Marca</h6>
-          <h4>Titulo Producto</h4>
-          <h6>$22.000</h6>
-        </div>
-        <div class="col-xs-6 checkbox">
-            <label>
-              <input id="accepted2" type="checkbox">
-              </label>
-          <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-          <img src="img/07.jpg">
-          <h6>Marca</h6>
-          <h4>Titulo Producto</h4>
-          <h6>$22.000</h6>
-        </div>
-        <button class="btn btn-primary" type="submit" id="id_complete" name="save" disabled="disabled">Complete Order</button>
+      <div class="col-xs-12">
+        <h4>SELECCIONA, COMPARA <br>Y COMPRA</h4>
+        <h5 class="font-compara">Selecciona nuestros productos y compara.</h5>
+      </div>
     </div>
   </div>
-  <div class="btn-comparar"></div>
+  <!-- CheckList API -->
+  <div class="container seleccionTop world">
+    <div class="row tienda">
+  </div>
+  <div class="btn-comparar" id="btn-container">
+    <div class="container">
+      <div class="row">
+        <button class="btn btn-primary" type="submit" id="id_complete" name="save" disabled="disabled">COMPARA</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  MACA FIN -->
   <!-- Fin CheckList API -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

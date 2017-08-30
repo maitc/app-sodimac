@@ -12630,71 +12630,82 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+/*maca*/
 var dato;
 // Carga de Modal con la página
 $(document).ready(function() {
        $(window).on('load',function(){
        $('#squarespaceModal').modal('show');
    });
-   
-   /*function checkUno(){
-   	   $(".check").change(function () {
-    if ($(this).is(':checked')) {
-        // Checkbox is checked..
-        dato = true; //if checkbox is true is checked, validate
-        console.log("checked");
-        $(".btn-comparar").css({
-            "height": "50px",
-			"background-color": "black"
-        });
-        $(".btn-comparar").append('<button class="btn btn-overlay" >COMPARAR</button>');
-        $(".btn-overlay").attr('disabled', 'disabled');
-    } else{
-    	dato = false
-        //checkbox = false;//if checkbox is false is not checked, validate
-    }
-	});
-   }; checkUno();
 
-   /*function checkDos(){
-   	$("#check-dos").change(function () {
-    if ($(this).is(':checked')) {
-        // Checkbox is checked..
-        dato = true; //if checkbox is true is checked, validate
-        console.log("hola");
-    } else{
-    	dato = false
-        
-        //checkbox = false;//if checkbox is false is not checked, validate
-    }
-	});
-   }; checkDos();
+  var jsonApi = [{"name":
+"Electrolux", "url":"http://sodimac.scene7.com/is/image/SodimacCL/2712636_01", "nam":"Enfriador de aire frío / calor", "price":"89990"},
+{"name":
+"Volker", "url":"http://sodimac.scene7.com/is/image/SodimacCL/2844338", "nam":"Aire acondicionado 12.000B black", "price":"249990"},
+{"name":
+"Wurden", "url":"http://sodimac.scene7.com/is/image/SodimacCL/3094006_01", "nam":"Aire acondicionado 12.000B black", "price":"249990"},
+{"name":
+"Wurden", "url":"http://sodimac.scene7.com/is/image/SodimacCL/3093999_01", "nam":"Aire acondicionado 9.000B Black", "price":"249990"},
+{"name":
+"Ursus Trotter", "url":"http://sodimac.scene7.com/is/image/SodimacCL/287797X", "nam":"Aire acondicionado portátil 9.000 BTU", "price":"299990"},
+{"name":
+"Kendal", "url":"http://sodimac.scene7.com/is/image/SodimacCL/2892359", "nam":"Aire acondicionado Split 18.000 BTU", "price":"439990"},
+{"name":
+"Honeywell", "url":"http://sodimac.scene7.com/is/image/SodimacCL/3192377", "nam":"Aire acondicionado MA14HCCD", "price":"469990"},
+{"name":
+"Kendal", "url":"http://sodimac.scene7.com/is/image/SodimacCL/2892367", "nam":"Aire acondicionado Split 24000 btu", "price":"579990"}]
 
-   if(checkUno() && checkDos()){
-   	dato = true;
-   	/*$(".btn-overlay").removeAttr('disabled');
-        $(".btn-overlay").css({
-            "background-color": "red"
-        });
-    console.log("bye");    
-   } */
-   /*function check(element) {
-	var cb1 = document.getElementById("checkbox1");
-	var cb2 = document.getElementById("checkbox2");
-	//var sub = document.getElementById("submit");
-	if (cb1.checked == true  &&  cb2.checked == true){
-	   //sub.disabled = false;
-	   alert("Bien CTM");
-	}
-	else{
-	   //sub.disabled = true;
-	}
-	}*/
-	$('#accepted1,#accepted2').click(function () {
-  if ($('#accepted1:checked,#accepted2:checked').length == 2)
-    $('#id_complete').removeAttr('disabled');
-  else
-    $('#id_complete').attr('disabled','disabled');
-	});
+jsonApi.forEach(function(e, f){
+  var contador = f + 1;
+  $(".tienda").append(
+        '<div class="col-xs-6 checkbox check-uno check'+contador+'">'+
+          '<div class="img-tienda tienda'+contador+'"><img src="'+e.url+'"></div>'+
+          '<h6 class="titulo'+contador+'">'+e.name+'</h6>'+
+          '<h5>'+e.nam+'</h5>'+
+          '<h4> $'+e.price+'</h4>'+
+          '<div class="row">'+
+            '<div class="col-xs-6">'+
+                '<label>'+
+                  '<input id="accepted1" type="checkbox">Selecciona'+
+                '</label>'+
+            '</div>'+
+            '<div class="col-xs-6">'+
+                '<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>'+
+            '</div>'+
+          '</div>'+
+        '</div>');
+})
+
+$('#accepted1,#accepted2').click(function () {
+    //aparece btn.
+    $("#btn-container").removeClass('btn-comparar');
+    $("#btn-container").addClass('btn-fijo');
+    
+    //si es check se activa btn, solo con los dos checks.
+    if ($('#accepted1:checked,#accepted2:checked').length == 2){
+      $('#id_complete').removeAttr('disabled');
+      $("#id_complete").css({
+         "background-color": "#DD0021",
+         "border": "none",
+         "width": "100%",
+         "height": "44px"
+      });
+    }else{
+       $('#id_complete').attr('disabled','disabled');
+      $("#id_complete").css({
+         "background-color": "#333333",
+         "border": "none",
+         "width": "100%",
+         "height": "44px"
+      });
+      //$("#btn-container").addClass('btn-comparar');
+    }
+  });
+
+  $(".btn-primary").click(function(){
+    window.location.href = "comparadordos.html"
+  })
+  
 });
 
+/*MACA FIN*/
