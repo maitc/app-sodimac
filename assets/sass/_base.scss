@@ -53,9 +53,23 @@ body{
 	}
 
 	/* API */
-	
 }
+
 .seleccionTop{
+	a{
+		text-decoration: none;
+		color: #ADADAD;
+	}
+
+	a:hover, a:active, a:focus{
+		text-decoration: none;
+	}
+
+	a:active, a:focus{
+		color: red;
+	}
+
+
 	div{
 		div{
 			img{
@@ -64,5 +78,21 @@ body{
     			max-height: 180px;
 			}
 		}
+	}
+
+	.checkbox {
+	    position: relative;
+	    display: inline-block !important;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	.fa-heart{
+		position: relative;
+	    top: -4px;
+	    left: 78%;
+	}
+
+	h6{
+		color: #ADADAD;
 	}
 }
