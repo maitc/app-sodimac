@@ -20,7 +20,7 @@ gulp.task('style', function(){
 });
 
 gulp.task("webserver", function(){
-	gulp.src("../app-sodimac/")
+	gulp.src("../app-sodimac/dist/")
 	.pipe(webserver({
 		fallback: "index.html", 
 		livereload: true,
