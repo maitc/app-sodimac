@@ -1,8 +1,11 @@
+body{
+	background-color: #F5F5F5;
+}
 nav{
 		.navbar-brand>img {
-	    display: block;
 	    width: 35px;
-	    margin-left: 63px;
+	    margin: -2px 0 0 22%;
+	    position: absolute;
 		}
 
 		.navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -26,38 +29,69 @@ nav{
 		div{
 			div{
 				img{
-					width: 103%;
+					width: 100%;
 					margin: 5px 0 0 0;
-					max-height: 120px;
+					max-height: 180px !important;
+					margin-bottom:13px;
 				}
 			}
 		}
 	}
 }
+.compara-caja{
+	background-color:#fff;
+	width: 46% !important;
+	margin: 2%;
+	
+}
+.comparador-img{
+	padding: 15px 7px;
+	background-color: #fff;
+}
+.compaCaja{
+		margin: 10px 2px 0 0;
+		//background-color: white;
+		//border-right: 1px solid gray;
+		h5{
+			margin: 0px;
+			color: black;
+			
+		}
+	}
+h5{
+	font-weight: bold !important;	
+}
+
+.agregarC{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.linea-titulo{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom: 1px solid #ADADAD;
+}	
 .comparador-section{
+	
 	#down{
 		margin-bottom: 2%;
 	}
-	#colOne{
-		border-right: 1px solid gray;
-	
-	}p#rigth{
+		
+	p#rigth{
 		display: inline-flex;
 		padding-left: 2%;
 		font-size: 90%;
 	}
-	h5{
-		border-top: 1px solid gray;
-		border-bottom: 1px solid gray;
-		padding: 2% 0%;
-		font-weight: 200;
-		color: gray;
-	}h4{
-		font-size: 110%;
-	}button{
-		background-color: #dd0021;
-		color: white;
-	}#margendonw{
+	button {
+	    background-color: #dd0021;
+	    color: #fff;
+	    width: 100% !important;
+	    height: 44px !important;
+	    border: none;
+	}
+
+	#margendonw{
 		margin-bottom: 16%;
 		border-bottom: 1px solid gray;
 	}
@@ -79,6 +113,9 @@ box-shadow: 0px -4px 28px 0px rgba(184,184,184,1);
 }
 #ap{
 	margin-bottom: 3%;
+}
+.price-color{
+	color:#0072CE;
 }
 
 
@@ -108,6 +145,5 @@ footer{
     background-image: url('../img/fa-living.svg');
     background-size: cover;
     padding: 0;
-
-}
+	}
 }
